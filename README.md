@@ -24,7 +24,7 @@ Testing the C Program for the desired output.
 # PROGRAM:
 
 ## C Program that illustrate communication between two process using unnamed pipes using Linux API system calls
-
+```
 #include <stdio.h> #include <stdlib.h> #include <sys/types.h> #include
 <sys/stat.h> #include <string.h> #include <fcntl.h> #include <unistd.h> #include
 <sys/wait.h>
@@ -50,14 +50,14 @@ open", 9); else { n = read(fd, buff, 2000); write(wfd, buff, n); close(fd); } }
 void client(int wfd, int rfd) { int n; char fname[2000], buff[2000]; printf("Enter
 filename: "); scanf("%s", fname); write(wfd, fname, 2000); n = read(rfd, buff, 2000);
 buff[n] = '\0'; write(1, buff, n); }
-
+```
 
 ## OUTPUT
 <img width="480" height="270" alt="Screenshot from 2026-03-11 08-31-23" src="https://github.com/user-attachments/assets/db90e136-4e1e-4575-9fc0-284d76fd34d1" />
 
 
 ## C Program that illustrate communication between two process using named pipes using Linux API system calls
-
+```
 #include <stdio.h> #include <stdlib.h> #include <unistd.h> #include <fcntl.h>
 #include <sys/types.h> #include <sys/stat.h> #include <string.h>
 #define FIFO_FILE "/tmp/my_fifo" #define FILE_NAME "hello.txt"
@@ -110,6 +110,7 @@ write(STDOUT_FILENO, buffer, bytes_read);
 }
 close(fifo_fd);
 }
+```
 # output
 <img width="480" height="270" alt="Screenshot from 2026-03-11 08-33-18" src="https://github.com/user-attachments/assets/234ef7a4-0271-463e-9317-cf69a5555185" />
 
