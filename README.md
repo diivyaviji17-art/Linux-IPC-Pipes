@@ -53,7 +53,7 @@ buff[n] = '\0'; write(1, buff, n); }
 
 
 ## OUTPUT
-<img width="931" height="244" alt="Screenshot 2026-02-23 104905" src="https://github.com/user-attachments/assets/80b22444-a31d-4f18-bfce-559d131cca08" />
+<img width="480" height="270" alt="Screenshot from 2026-03-11 08-31-23" src="https://github.com/user-attachments/assets/db90e136-4e1e-4575-9fc0-284d76fd34d1" />
 
 
 ## C Program that illustrate communication between two process using named pipes using Linux API system calls
@@ -111,7 +111,7 @@ write(STDOUT_FILENO, buffer, bytes_read);
 close(fifo_fd);
 }
 # output
-<img width="927" height="211" alt="Screenshot 2026-02-23 110254" src="https://github.com/user-attachments/assets/f21826f8-d5b5-4800-a5f3-c8794464b734" />
+<img width="480" height="270" alt="Screenshot from 2026-03-11 08-33-18" src="https://github.com/user-attachments/assets/234ef7a4-0271-463e-9317-cf69a5555185" />
 
 # RESULT:
 The program is executed successfully.
